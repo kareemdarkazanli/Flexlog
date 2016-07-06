@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+
+    <TextView
+        android:singleLine="true"
+
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="145 lbs"
+        android:id="@+id/weightTextViewHistory"
+
+        android:layout_alignTop="@+id/repsTextViewHistory"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/weightTextViewHistory"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000 reps"
+        android:layout_marginRight="5dp"
+        android:id="@+id/repsTextViewHistory"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a note"
+        android:textSize="16dp"
+        android:id="@+id/noteTextViewHistory"
+        android:layout_below="@id/repsTextViewHistory"/>
+
+</RelativeLayout>

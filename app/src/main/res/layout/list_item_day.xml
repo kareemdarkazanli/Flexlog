@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Squat Squat Squat Squat Squat Squat"
+        android:textSize="18dp"
+        android:id="@+id/userExerciseNameTextView"
+        android:layout_toLeftOf="@+id/userExerciseRepsTextVie"
+        android:layout_toStartOf="@+id/userExerciseRepsTextVie"
+        android:layout_alignTop="@+id/userExerciseRepsTextVie"
+        android:layout_alignBottom="@+id/userExerciseRepsTextVie" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userExerciseCommentTextView"
+        android:layout_below="@+id/userExerciseNameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="145 lbs"
+        android:id="@+id/userExerciseWeightTextView"
+        android:layout_toLeftOf="@+id/imageViewNote"
+        />
+
+    <TextView
+        android:layout_marginLeft="2dp"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="20 reps"
+        android:textSize="18dp"
+        android:id="@+id/userExerciseRepsTextVie"
+        android:layout_toLeftOf="@id/userExerciseWeightTextView" />
+
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageViewNote"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/userExerciseWeightTextView" />
+
+
+</RelativeLayout>

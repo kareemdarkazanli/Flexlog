@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:adjustViewBounds="true"
+    android:cropToPadding="true"
+    tools:context="com.example.kareemdarkazanli.flexlog.FragmentDay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/searchLayout"
+        android:background="@color/red"
+        >
+
+        <ImageButton
+            android:padding="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:background="@color/red"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/historyImageButton"
+            android:src="@drawable/listhistoryv2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:padding="2dp"
+            android:background="@color/red"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/cameraImageButton"
+            android:src="@drawable/camerav2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+           />
+
+        <ImageButton
+            android:padding="2dp"
+            android:background="@color/red"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/searchImageButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@id/cameraImageButton" />
+
+
+
+        <EditText
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:id="@+id/statusEditText"
+            android:layout_marginBottom="12dp"
+
+            android:imeOptions="actionDone"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/searchImageButton"
+            android:layout_toRightOf="@+id/historyImageButton"
+            android:layout_toEndOf="@+id/historyImageButton" />
+
+        <EditText
+            android:capitalize="words"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchEditText"
+            android:textColor="@color/white"
+            android:imeOptions="actionDone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/historyImageButton"
+            android:layout_toLeftOf="@+id/searchImageButton"
+            android:layout_toStartOf="@+id/searchImageButton"
+            android:layout_toEndOf="@+id/historyImageButton"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchLayout">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/userExercisesListView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:listSelector="@android:color/transparent"
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/addExerciseButton"
+            android:elevation="5dp"
+            android:background="@drawable/round_button"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@drawable/heartadd"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click + to add an exercise."
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:id="@+id/dayMessage"
+             />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="16dp"
+
+    tools:context="com.example.kareemdarkazanli.flexlog.DialogFragmentNewWeight">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:textSize="16dp"
+        android:id="@+id/textView"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:text="mi"
+        android:textSize="12dp"
+        android:id="@+id/distanceButton"
+        android:background="@drawable/round_gray_button"
+        android:layout_toRightOf="@id/textView"
+        />
+
+    <ImageButton
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/speechbubblegray"
+        android:scaleType="fitCenter"
+        android:id="@+id/addCommentButton"
+        android:background="@color/transparent"
+        android:layout_alignTop="@+id/distanceButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <EditText
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="40dp"
+        android:hint="0.0"
+        android:id="@+id/distanceEditText"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/distanceButton"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="16dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/distanceEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:capitalize="words"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardioNoteEditText"
+        android:hint="Add a note"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:id="@+id/linearLayout"
+        >
+
+
+        <EditText
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="40dp"
+            android:hint="hr"
+            android:id="@+id/hrEditText"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:id="@+id/textView4"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="40dp"
+            android:hint="min"
+            android:layout_weight="1"
+            android:id="@+id/minEditText"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:id="@+id/textView3"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="40dp"
+            android:hint="sec"
+            android:layout_weight="1"
+            android:id="@+id/secEditText"
+            android:gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

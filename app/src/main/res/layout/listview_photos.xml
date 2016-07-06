@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:adjustViewBounds="true"
+    android:cropToPadding="true"
+    android:id="@+id/photoRelativeLayout">
+
+    <SurfaceView
+        android:focusable="false"
+        android:background="@color/transparent"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:id="@+id/surfaceView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/searchLayout"
+        android:background="@color/red"
+        >
+
+        <ImageButton
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:background="@color/red"
+            android:src="@drawable/filtericon"
+            android:layout_toLeftOf="@+id/gridImageButton"
+            android:layout_toStartOf="@+id/gridImageButton"
+            android:layout_alignTop="@+id/gridImageButton"
+            android:id="@+id/imageButtonUpdate" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textStyle="italic"
+            android:fontFamily=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flexlog"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/historyTextView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/cameraBackButton"
+            android:layout_toEndOf="@+id/cameraBackButton" />
+
+        <ImageButton
+            android:padding="2dp"
+            android:background="@color/red"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/gridImageButton"
+            android:src="@drawable/grid"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:background="@color/transparent"
+            android:id="@+id/cameraBackButton"
+            android:src="@drawable/leftwhite"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchLayout">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photosListView" />
+
+        <TextView
+            android:id="@+id/yourGalleryTextView"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Your gallery is empty."/>
+
+        <Button
+            android:clickable="false"
+            android:background="@drawable/round_transparent_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:id="@+id/countButton"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:background="@color/transparent"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/downloadButton"
+            android:padding="5dp"
+            android:src="@drawable/download"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <EditText
+            android:background="@color/semitransparent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photoDateEditText"
+            android:textColor="@color/white"
+            android:text=""
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <EditText
+            android:background="@color/semitransparent"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text=""
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photoNoteEditText"
+            android:layout_below="@+id/photoDateEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:background="@color/semitransparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photoEditEditText"
+            android:textColor="@color/white"
+            android:text=""
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <GridView
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photoGridView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="2dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>

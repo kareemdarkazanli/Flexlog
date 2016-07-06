@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewOne"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+
+        />
+    <ImageView
+
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewTwo"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/imageViewOne" />
+    <ImageView
+
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewThree"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/imageViewTwo" />
+    <ImageView
+
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewFour"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/imageViewThree" />
+    <ImageView
+
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewFive"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/imageViewFour" />
+    <ImageView
+
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewSix"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/imageViewFive" />
+    <ImageView
+
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewSeven"
+        android:layout_centerVertical="true"
+
+        android:layout_toLeftOf="@id/imageViewSix" />
+    <ImageView
+
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewEight"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/imageViewSeven" />
+
+
+    <TextView
+
+        android:singleLine="true"
+        android:textStyle="italic"
+        android:layout_marginLeft="5dp"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fri, Dec 25"
+        android:layout_centerVertical="true"
+        android:id="@+id/dateTextVieww"
+        android:layout_toLeftOf="@+id/imageViewEight"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
